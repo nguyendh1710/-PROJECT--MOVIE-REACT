@@ -108,7 +108,7 @@ export default function TicketPage({ showtimeId, ticketInfo }) {
               {/* Flim Details */}
 
               <Grid item xs={12} md={4}>
-                <img src={ticketInfo.hinhAnh} />
+                <img src={ticketInfo.hinhAnh} width={300} height={320}/>
               </Grid>
               {/* Flim  Location Details*/}
 
