@@ -20,7 +20,7 @@ import {
 import { mixed, object, string } from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Swal from "sweetalert2";
-
+import {CusButton} from './AddMovie.styles'
 //////////////////////////////////////////////////////////////////////
 const addMovieSchema = object({
   tenPhim: string().required("Tên Phim không được để trống"),
@@ -290,12 +290,12 @@ export default function AddMovie({ handleClose }) {
           </FormControl>
         </div>
 
-        <Button
-          sx={{ backgroundColor: "#FE6B8B", color: "white" }}
+        <CusButton
+         
           type="submit"
         >
           Thêm Phim
-        </Button>
+        </CusButton>
       </form>
     </>
   );

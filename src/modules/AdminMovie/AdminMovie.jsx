@@ -140,7 +140,7 @@ export default function AdminMovie() {
                 color="warning"
                 onClick={handleOpenNewMovie}
                 style={{
-                  marginLeft: "850px",
+                  marginLeft: "650px",
                 }}
               >
                 Thêm Phim
@@ -223,9 +223,9 @@ export default function AdminMovie() {
             aria-describedby="keep-mounted-modal-description"
           >
             <Box sx={style} style={{ backgroundColor: "lavender" }}>
-              <h1 style={{ textAlign: "center", fontWeight: "bold" }}>
+              <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
                 Thêm Phim
-              </h1>
+              </h2>
               <AddMovie handleClose={handleCloseNewMovie} />
             </Box>
           </Modal>
@@ -239,9 +239,9 @@ export default function AdminMovie() {
             aria-describedby="keep-mounted-modal-description"
           >
             <Box sx={style} style={{ backgroundColor: "lavender" }}>
-              <h1 style={{ textAlign: "center", fontWeight: "bold" }}>
+              <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
                 Edit Movie
-              </h1>
+              </h2>
               <EditMovie handleClose={handleCloseEditMovie} id={editMovieId} />
             </Box>
           </Modal>

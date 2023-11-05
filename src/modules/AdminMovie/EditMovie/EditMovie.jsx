@@ -25,7 +25,7 @@ import {
 import { mixed, object, string } from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Swal from "sweetalert2";
-
+import { CusButton } from "./EditMovie.styles.js";
 const addMovieSchema = object({
   tenPhim: string().required("Tên Phim không được để trống"),
   biDanh: string().required("Bí danh không được để trống"),
@@ -159,7 +159,7 @@ export default function EditMovie({ handleClose, id }) {
       <ButtonGroup
         variant="outlined"
         aria-label="outlined button group"
-        sx={{ marginBottom: "15px", height: "35px", marginLeft: "55px" }}
+        sx={{ marginBottom: "10px", height: "25px", marginLeft: "55px" }}
       >
         <Button>Small</Button>
         <Button>Default</Button>
@@ -169,7 +169,7 @@ export default function EditMovie({ handleClose, id }) {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <TextField
-            sx={{ marginBottom: "15px" }}
+            sx={{ marginBottom: "10px" }}
             id="tenPhim"
             label="Tên Phim"
             variant="outlined"
@@ -184,7 +184,7 @@ export default function EditMovie({ handleClose, id }) {
         </div>
         <div>
           <TextField
-            sx={{ marginBottom: "15px" }}
+            sx={{ marginBottom: "10px" }}
             id="biDanh"
             label="Bí Danh"
             variant="outlined"
@@ -199,7 +199,7 @@ export default function EditMovie({ handleClose, id }) {
         </div>
         <div>
           <TextField
-            sx={{ marginBottom: "15px" }}
+            sx={{ marginBottom: "10px" }}
             id="moTa"
             label="Mô tả"
             variant="outlined"
@@ -214,7 +214,7 @@ export default function EditMovie({ handleClose, id }) {
         </div>
         <div>
           <input
-            style={{ marginBottom: "15px" }}
+            style={{ marginBottom: "10px" }}
             id="hinhAnh"
             label="Hình Ảnh"
             type="file"
@@ -224,12 +224,12 @@ export default function EditMovie({ handleClose, id }) {
           {/* event.target.files */}
           {/* <input type="file" placeholder="Hình Ảnh" {...register("hinhAnh")} /> */}
           {imgPreview && (
-            <img src={imgPreview} alt="preview" width={200} height={100} />
+            <img src={imgPreview} alt="preview" width={100} height={100} />
           )}
         </div>
         <div>
           <TextField
-            sx={{ marginBottom: "15px" }}
+            sx={{ marginBottom: "10px" }}
             id="trailer"
             label="Trailer"
             variant="outlined"
@@ -319,12 +319,12 @@ export default function EditMovie({ handleClose, id }) {
           </FormControl>
         </div>
 
-        <Button
-          sx={{ backgroundColor: "#FE6B8B", color: "white" }}
+        <CusButton
+          
           type="submit"
         >
           Chỉnh Sửa
-        </Button>
+        </CusButton>
       </form>
     </>
   );

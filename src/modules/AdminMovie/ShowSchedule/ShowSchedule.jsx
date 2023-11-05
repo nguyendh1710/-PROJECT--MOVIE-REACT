@@ -29,6 +29,7 @@ import { mixed, object, string, number } from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Swal from "sweetalert2";
 import { useParams } from "react-router-dom";
+import {CusButton}  from './ShowSchedule.styles'
 //////////////////////////////////////////////////////////////////////
 const showScheduleSchema = object({
   maPhim: number().required("Mã Phim không được để trống"),
@@ -255,18 +256,12 @@ export default function ShowSchedule({ handleClose }) {
             />
             {/* <input placeholder="Trailer" {...register("trailer")} /> */}
           </div>
-          <Button
-            sx={{
-              backgroundColor: "#FE6B8B",
-              color: "white",
-              marginTop: "12px",
-              marginLeft: "450px",
-              marginBottom: "52px",
-            }}
+          <CusButton
+           
             type="submit"
           >
             Tạo lịch chiếu
-          </Button>
+          </CusButton>
         </form>
       </Box>
     </>
