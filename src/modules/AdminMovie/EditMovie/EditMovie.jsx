@@ -224,12 +224,12 @@ export default function EditMovie({ handleClose, id }) {
           {/* event.target.files */}
           {/* <input type="file" placeholder="Hình Ảnh" {...register("hinhAnh")} /> */}
           {imgPreview && (
-            <img src={imgPreview} alt="preview" width={100} height={100} />
+            <img src={imgPreview} alt="preview" width={50} height={50} />
           )}
         </div>
         <div>
           <TextField
-            sx={{ marginBottom: "10px" }}
+            sx={{ marginBottom: "10px",  marginTop: "10px"}}
             id="trailer"
             label="Trailer"
             variant="outlined"
@@ -261,7 +261,7 @@ export default function EditMovie({ handleClose, id }) {
         </div>
         <div>
           <FormControl>
-            <FormLabel id="demo-row-radio-buttons-group-label">
+            <FormLabel id="demo-row-radio-buttons-group-label" style={{ fontSize: '12px'}}>
               Sắp Chiếu
             </FormLabel>
             <Switch
@@ -281,7 +281,7 @@ export default function EditMovie({ handleClose, id }) {
             </Switch>
           </FormControl>
           <FormControl>
-            <FormLabel id="demo-row-radio-buttons-group-label">
+            <FormLabel id="demo-row-radio-buttons-group-label" style={{ fontSize: '12px'}}>
               Đang Chiếu
             </FormLabel>
             <Switch
@@ -301,7 +301,7 @@ export default function EditMovie({ handleClose, id }) {
             </Switch>
           </FormControl>
           <FormControl>
-            <FormLabel id="demo-row-radio-buttons-group-label">Hot</FormLabel>
+            <FormLabel id="demo-row-radio-buttons-group-label" style={{ fontSize: '12px'}}>Hot</FormLabel>
             <Switch
               row
               aria-labelledby="demo-row-radio-buttons-group-label"

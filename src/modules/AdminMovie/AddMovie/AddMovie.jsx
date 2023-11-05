@@ -170,7 +170,7 @@ export default function AddMovie({ handleClose }) {
           {/* event.target.files */}
           {/* <input type="file" placeholder="Hình Ảnh" {...register("hinhAnh")} /> */}
           {imgPreview && (
-            <img src={imgPreview} alt="preview" width={200} height={100} />
+            <img src={imgPreview} alt="preview" width={50} height={50} />
           )}
         </div>
         <div>
@@ -211,9 +211,9 @@ export default function AddMovie({ handleClose }) {
             })}
           />
         </div>
-        <div>
+        <div style={{ display:'flex'}}>
           <FormControl>
-            <FormLabel id="demo-row-radio-buttons-group-label">
+            <FormLabel id="demo-row-radio-buttons-group-label" style={{ fontSize: '12px'}}>
               Sắp Chiếu
             </FormLabel>
             <Switch
@@ -236,9 +236,9 @@ export default function AddMovie({ handleClose }) {
                 label="False"
               />
             </Switch>
-          </FormControl>
-          <FormControl>
-            <FormLabel id="demo-row-radio-buttons-group-label">
+          </FormControl >
+          <FormControl style={{ paddingLeft: '10px'}}>
+            <FormLabel id="demo-row-radio-buttons-group-label" style={{ fontSize: '12px'}}>
               Đang Chiếu
             </FormLabel>
             <Switch
@@ -262,7 +262,7 @@ export default function AddMovie({ handleClose }) {
             </Switch>
           </FormControl>
           <FormControl>
-            <FormLabel id="demo-row-radio-buttons-group-label">Hot</FormLabel>
+            <FormLabel id="demo-row-radio-buttons-group-label" style={{ fontSize: '12px'}}>Hot</FormLabel>
             <Switch
               sx={{ marginRight: "72px" }}
               row
